@@ -1,0 +1,7 @@
+-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Include -I ..\MesDriver
+-I.\RTE\Device\STM32F103RB
+-I.\RTE\_SimulBG
+-IC:\Programdata\Keil\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+-IC:\Programdata\Keil\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F10X_MD -D_RTE_
+-o .\objects\driver_adc.o --omf_browse .\objects\driver_adc.crf --depend .\objects\driver_adc.d "Driver_ADC.c"
